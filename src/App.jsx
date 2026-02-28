@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
@@ -21,15 +21,15 @@ const ScrollToTop = () => {
     }, [pathname]);
     return null;
 };
-
 function App() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <Router>
             <ScrollToTop />
             <div className="app">
                 <header style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 3000 }}>
                     <TopBar />
-                    <Navbar />
+                    <Navbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
                 </header>
                 <div className="main-content">
                     <Routes>
@@ -43,7 +43,7 @@ function App() {
                     </Routes>
                 </div>
                 <Footer />
-                <WhatsAppButton />
+                <WhatsAppButton isMenuOpen={isMenuOpen} />
             </div>
         </Router>
     );
