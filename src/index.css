@@ -273,3 +273,56 @@ img {
     font-size: 0.72rem;
   }
 }
+
+/* TrustStrip Styles */
+.trust-strip {
+  background: #fff;
+  padding: 45px 5%;
+  border-bottom: 1px solid var(--soft-steel);
+}
+
+.trust-strip-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.trust-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1 1 240px;
+  padding-left: 20px;
+  border-left: 1px solid var(--soft-steel);
+}
+
+.trust-strip-item:first-child {
+  border-left: none;
+}
+
+.trust-strip-icon {
+  color: var(--metallic-blue);
+}
+
+.trust-strip-text {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary-brand);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+  .trust-strip-item {
+    border-left: none !important;
+    border-bottom: 1px solid var(--soft-steel);
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+
+  .trust-strip-item:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0;
+  }
+}

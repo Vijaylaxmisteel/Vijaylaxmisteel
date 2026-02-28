@@ -11,13 +11,8 @@ const TrustStrip = () => {
     ];
 
     return (
-        <div style={{ background: '#fff', padding: '45px 5%', borderBottom: '1px solid var(--soft-steel)' }}>
-            <div className="container" style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                gap: '40px',
-                flexWrap: 'wrap'
-            }}>
+        <div className="trust-strip">
+            <div className="container trust-strip-container">
                 {items.map((item, index) => (
                     <motion.div
                         key={index}
@@ -25,30 +20,17 @@ const TrustStrip = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '15px',
-                            flex: '1 1 240px',
-                            paddingLeft: '20px',
-                            borderLeft: index === 0 ? 'none' : '1px solid var(--soft-steel)'
-                        }}
+                        className="trust-strip-item"
                     >
-                        <div style={{ color: 'var(--metallic-blue)' }}>
+                        <div className="trust-strip-icon">
                             {React.cloneElement(item.icon, { size: 28 })}
                         </div>
-                        <span style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--primary-brand)', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                        <span className="trust-strip-text">
                             {item.text}
                         </span>
                     </motion.div>
                 ))}
             </div>
-            <style jsx>{`
-        @media (max-width: 991px) {
-          div > div > div { border-left: none !important; border-bottom: 1px solid var(--soft-steel); padding-bottom: 20px; }
-          div > div > div:last-child { border-bottom: none !important; }
-        }
-      `}</style>
         </div>
     );
 };
