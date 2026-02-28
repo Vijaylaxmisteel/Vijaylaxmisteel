@@ -115,11 +115,11 @@ const QualityPage = () => {
                         </p>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                             <div style={{ background: 'rgba(255,255,255,0.05)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid var(--metallic-blue)' }}>
-                                <h4 style={{ marginBottom: '10px' }}>ISO Certified</h4>
+                                <h4 style={{ color: '#9CA3AF', marginBottom: '10px' }}>ISO Certified</h4>
                                 <p style={{ fontSize: '0.85rem', color: '#9CA3AF' }}>Operations compliant with ISO 9001:2015</p>
                             </div>
                             <div style={{ background: 'rgba(255,255,255,0.05)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid var(--metallic-blue)' }}>
-                                <h4 style={{ marginBottom: '10px' }}>100% Traceability</h4>
+                                <h4 style={{ color: '#9CA3AF', marginBottom: '10px' }}>100% Traceability</h4>
                                 <p style={{ fontSize: '0.85rem', color: '#9CA3AF' }}>Complete raw material trace-back logs</p>
                             </div>
                         </div>

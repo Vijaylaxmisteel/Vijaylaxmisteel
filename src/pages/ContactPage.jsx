@@ -226,7 +226,7 @@ const ContactPage = () => {
                                 <ShieldCheck size={24} color="var(--metallic-blue)" style={{ flexShrink: 0 }} />
                                 <div>
                                     <div style={{ fontWeight: 800, color: 'var(--primary-brand)', marginBottom: '5px' }}>Compliance</div>
-                                    <div style={{ color: 'var(--text-paragraph)', fontSize: '0.95rem' }}>GSTIN: 24ASBPD9903A1ZE <br />ISO 9001:2015 Certified</div>
+                                    <div style={{ color: 'var(--text-paragraph)', fontSize: '0.95rem' }}>GSTIN: 24ASBPD9903A1ZE <br /></div>
                                 </div>
                             </div>
                         </div>

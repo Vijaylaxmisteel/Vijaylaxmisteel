@@ -2,7 +2,12 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { products } from '../data/products';
-import { CheckCircle, ArrowRight, Table, Briefcase, Award, ShieldCheck } from 'lucide-react';
+import {
+    CheckCircle, ArrowRight, Table, Briefcase, Award, ShieldCheck,
+    FlaskConical, Utensils, Droplets, Zap, Fuel, Building2, Car,
+    Stethoscope, Beer, Snowflake, Factory, Wrench, Microscope,
+    HardHat, Cog, Lightbulb
+} from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 
 import CategoryWithVariants from '../components/CategoryWithVariants';
@@ -180,25 +185,73 @@ const ProductDetailPage = () => {
                         Our {product.name} are trusted across these critical industrial sectors.
                     </p>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
-                    {product.applications.map((app, i) => (
-                        <motion.div
-                            key={i}
-                            whileHover={{ scale: 1.05 }}
-                            style={{
-                                background: 'var(--bg-light)',
-                                padding: '30px 20px',
-                                borderRadius: '8px',
-                                textAlign: 'center',
-                                border: '1px solid var(--soft-steel)',
-                                fontSize: '1rem',
-                                fontWeight: 700,
-                                color: 'var(--primary-brand)'
-                            }}
-                        >
-                            {app}
-                        </motion.div>
-                    ))}
+                <div style={{ position: 'relative', width: '100vw', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', overflow: 'hidden', padding: '20px 0' }}>
+                    <motion.div
+                        animate={{ x: [0, -300 * product.applications.length] }}
+                        transition={{
+                            x: {
+                                repeat: Infinity,
+                                repeatType: "loop",
+                                duration: 25,
+                                ease: "linear"
+                            }
+                        }}
+                        style={{
+                            display: 'flex',
+                            gap: '20px',
+                            width: 'max-content',
+                            padding: '0 20px'
+                        }}
+                    >
+                        {[...product.applications, ...product.applications, ...product.applications].map((app, i) => {
+                            const getIcon = (name) => {
+                                const lower = name.toLowerCase();
+                                if (lower.includes('pharma') || lower.includes('chemical')) return <FlaskConical size={32} />;
+                                if (lower.includes('dairy') || lower.includes('liquid')) return <Droplets size={32} />;
+                                if (lower.includes('food') || lower.includes('beverage') || lower.includes('kitchen')) return <Utensils size={32} />;
+                                if (lower.includes('oil') || lower.includes('gas') || lower.includes('refinery')) return <Fuel size={32} />;
+                                if (lower.includes('power') || lower.includes('energy') || lower.includes('electrical')) return <Zap size={32} />;
+                                if (lower.includes('infrastructure') || lower.includes('construction') || lower.includes('building')) return <Building2 size={32} />;
+                                if (lower.includes('automobile') || lower.includes('transport')) return <Car size={32} />;
+                                if (lower.includes('medical') || lower.includes('hospital')) return <Stethoscope size={32} />;
+                                if (lower.includes('hvac') || lower.includes('refrigeration') || lower.includes('cooling')) return <Snowflake size={32} />;
+                                if (lower.includes('manufacturing') || lower.includes('factory')) return <Factory size={32} />;
+                                if (lower.includes('engineering') || lower.includes('fabrication')) return <Wrench size={32} />;
+                                if (lower.includes('laboratory') || lower.includes('research')) return <Microscope size={32} />;
+                                if (lower.includes('industrial') || lower.includes('machining')) return <Cog size={32} />;
+                                return <Briefcase size={32} />;
+                            };
+
+                            return (
+                                <div
+                                    key={i}
+                                    style={{
+                                        width: '280px',
+                                        background: 'white',
+                                        padding: '40px 30px',
+                                        borderRadius: '16px',
+                                        textAlign: 'center',
+                                        border: '1px solid var(--soft-steel)',
+                                        boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
+                                        flexShrink: 0
+                                    }}
+                                >
+                                    <div style={{ color: 'var(--metallic-blue)', marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                        {getIcon(app)}
+                                    </div>
+                                    <div style={{
+                                        fontSize: '1rem',
+                                        fontWeight: 700,
+                                        color: 'var(--primary-brand)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '1px'
+                                    }}>
+                                        {app}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </motion.div>
                 </div>
             </section>
 
