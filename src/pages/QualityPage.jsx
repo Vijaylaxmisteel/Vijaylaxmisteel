@@ -27,7 +27,8 @@ const QualityPage = () => {
         "Hydrostatic and Pneumatic Testing",
         "Non-Destructive Testing (UT, DPI, MPI)",
         "Surface Finish & Roughness Measurement",
-        "Visual & Dimensional Inspection"
+        "Visual & Dimensional Inspection",
+        "All our materials are inspected and certified by an ASNT NDT Level II qualified professional."
     ];
 
     return (
