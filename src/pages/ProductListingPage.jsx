@@ -55,7 +55,7 @@ const ProductListingPage = () => {
                     position: 'relative',
                     overflow: 'hidden'
                 }}>
-                    <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Need Technical Specifications?</h2>
+                    <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: '#FFFDD0' }}>Need Technical Specifications?</h2>
                     <p style={{ color: '#D1D5DB', marginBottom: '40px', fontSize: '1.1rem' }}>
                         Our material specialists are available to provide detailed data sheets and CAD drawings as per your project requirements.
                     </p>

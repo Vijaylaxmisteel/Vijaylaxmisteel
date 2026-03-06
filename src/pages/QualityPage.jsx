@@ -28,7 +28,7 @@ const QualityPage = () => {
         "Non-Destructive Testing (UT, DPI, MPI)",
         "Surface Finish & Roughness Measurement",
         "Visual & Dimensional Inspection",
-        "All our materials are inspected and certified by an ASNT NDT Level II qualified professional."
+        "All our materials are inspected and certified by an ASNT NDT Level II qualified professional as per valid certification."
     ];
 
     return (
@@ -251,7 +251,7 @@ const QualityPage = () => {
                     />
                     <div style={{ position: 'relative', zIndex: 1 }}>
                         <ShieldCheck size={60} style={{ margin: '0 auto 30px', color: 'var(--metallic-blue)' }} />
-                        <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Trust in Every Ton</h2>
+                        <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#FFFDD0' }}>Trust in Every Ton</h2>
                         <p style={{ fontSize: '1.2rem', color: '#D1D5DB', maxWidth: '700px', margin: '0 auto 40px' }}>
                             We provide full documentation and technical support for all our products. Contact our quality department for specific testing requests.
                         </p>
