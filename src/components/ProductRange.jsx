@@ -7,7 +7,8 @@ const homeProducts = [
     { name: "Pipes & Tubes", img: "/images/products/ss tubes and pipes.jpeg", slug: "pipes-tubes" },
     { name: "Sheet / plates", img: "/images/products/steel coil.jpeg", slug: "sheet-plates" },
     { name: "Flanges", img: "/images/products/flanges.jpeg", slug: "flanges" },
-    { name: "Pipe Fitting", img: "/images/products/pipe fitting.jpeg", slug: "pipe-fitting" }
+    { name: "Pipe Fitting", img: "/images/products/pipe fitting.jpeg", slug: "pipe-fitting" },
+    { name: "Special alloys", img: "/images/products/steel coil.jpeg", slug: "special-alloys" }
 ];
 
 const ProductRange = () => {

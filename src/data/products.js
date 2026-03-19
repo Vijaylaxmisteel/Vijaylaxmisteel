@@ -511,5 +511,61 @@ export const products = [
                 variants: ["Titanium"]
             }
         ]
+    },
+    {
+        id: 16,
+        name: "Special alloys",
+        slug: "special-alloys",
+        tagline: "Premium grade special alloys for extreme environments.",
+        image: "/images/products/steel coil.jpeg",
+        description: "We provide Special Alloys known for exceptional performance, superior strength, and high resistance to oxidation and corrosion in aggressive environments.",
+        specifications: [
+            { label: "Types", value: "Pipes, Tubes, Sheets, Plates, Coils, Bars, Rods" }
+        ],
+        applications: ["Aerospace", "Chemical Processing", "Marine Engineering", "Power Generation", "Oil & Gas"],
+        benefits: ["High Temperature Strength", "Superior Corrosion Resistance", "Excellent Durability"],
+        category: "Special Alloys",
+        variants: [
+            {
+                name: "Inconel products",
+                variants: [
+                    "Inconel pipes and tubes",
+                    "Incone sheets plates and coils",
+                    "Incone bars and rods"
+                ]
+            },
+            {
+                name: "Nickel Alloy products",
+                variants: [
+                    "Nickel Alloy pipes and tubes",
+                    "nickel alloy sheets plates and coils",
+                    "nickel alloy bars and rods"
+                ]
+            },
+            {
+                name: "Hastelloy products",
+                variants: [
+                    "Hastelloy pipes and tubes",
+                    "Hastelloy sheets plates and coils",
+                    "Hastelloy bars and rods"
+                ]
+            },
+            {
+                name: "monel products",
+                variants: [
+                    "monel pipies and tubes",
+                    "monel sheets plates and coils",
+                    "monel bars and rods"
+                ]
+            },
+            {
+                name: "titanium products",
+                variants: [
+                    "titanium pipies and tubes",
+                    "titanium sheets plates and coils",
+                    "titanium bars and rods"
+                ]
+            }
+        ]
     }
 ];
