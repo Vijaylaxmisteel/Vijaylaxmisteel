@@ -73,7 +73,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <span style={{ color: 'white', fontWeight: 700, display: 'block', fontSize: '0.8rem', marginBottom: '5px' }}>BRANCH OFFICE</span>
-                            <span>PLOT NO 239, LAD COMPLEX, SHOP NO 10, GIDC UMBERGAON, 396171</span>
+                            <span>PLOT NO 239, LAD COMPLEX, SHOP NO 10, GIDC UMBERGAON, Gujarat - 396171</span>
                         </div>
                     </div>
                 </div>

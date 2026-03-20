@@ -240,7 +240,7 @@ const ContactPage = () => {
                     >
                         <h4 style={{ fontSize: '1.2rem', marginBottom: '15px', color: '#FFFDD0' }}>Response Assurance</h4>
                         <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                            Our material specialists usually respond to all technical enquiries within 24 business hours. For urgent site requirements, please use the direct WhatsApp link.
+                            Our material specialists usually respond to all technical enquiries within 24 hours. For urgent site requirements, please use the direct WhatsApp link.
                         </p>
                     </motion.div>
                 </div>

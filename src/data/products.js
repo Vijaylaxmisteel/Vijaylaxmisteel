@@ -517,7 +517,7 @@ export const products = [
         name: "Special alloys",
         slug: "special-alloys",
         tagline: "Premium grade special alloys for extreme environments.",
-        image: "/images/products/steel coil.jpeg",
+        image: "/images/products/special alloys.jpeg",
         description: "We provide Special Alloys known for exceptional performance, superior strength, and high resistance to oxidation and corrosion in aggressive environments.",
         specifications: [
             { label: "Types", value: "Pipes, Tubes, Sheets, Plates, Coils, Bars, Rods" }

@@ -8,7 +8,7 @@ const homeProducts = [
     { name: "Sheet / plates", img: "/images/products/steel coil.jpeg", slug: "sheet-plates" },
     { name: "Flanges", img: "/images/products/flanges.jpeg", slug: "flanges" },
     { name: "Pipe Fitting", img: "/images/products/pipe fitting.jpeg", slug: "pipe-fitting" },
-    { name: "Special alloys", img: "/images/products/steel coil.jpeg", slug: "special-alloys" }
+    { name: "Special alloys", img: "/images/products/special alloys.jpeg", slug: "special-alloys" }
 ];
 
 const ProductRange = () => {
